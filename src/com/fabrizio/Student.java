@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Student {
     private String firstName;
     private String lastName;
-    private String gradeYear;
+    private int gradeYear;
     private int studentID;
     private String courses;
     private int tuitionBalance;
@@ -19,8 +19,9 @@ public class Student {
             System.out.print("Enter Students last name : " );
             this.lastName = in.nextLine();
 
-            System.out.print("Enter Students grade level: " );
-            this.gradeYear = in.nextLine();
+            System.out.print("1: Freshman\n 2: Sophmore\n 3: Junior\n 4: Senior\n Enter class level" );
+            this.gradeYear = in.nextInt();
+            System.out.println(firstName + " " + lastName + " " + gradeYear);
         }
     // generate an id
 
