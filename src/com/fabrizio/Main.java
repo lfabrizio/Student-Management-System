@@ -6,5 +6,6 @@ public class Main {
 	// write your code here
         // project
         Student stu1 = new Student();
+        stu1.enroll();
     }
 }
