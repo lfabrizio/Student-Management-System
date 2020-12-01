@@ -25,8 +25,6 @@ public class Student {
 
             setStudentID();
 
-            System.out.println(firstName + " " + lastName + " " + gradeYear + " " + studentID);
-
         }
     // generate an id
     private void setStudentID(){
@@ -51,8 +49,7 @@ public class Student {
                 break;
             }
         } while (1 != 0);
-        System.out.println("Enrolled in: " + courses);
-        System.out.println("Tuition Balance " + tuitionBalance);
+
     }
 
 
@@ -63,6 +60,7 @@ public class Student {
 
     // tuition
     public void payTuition(){
+            viewBalance();
         System.out.println("Enter your payment: $");
             Scanner in = new Scanner(System.in);
             int payment = in.nextInt();
@@ -72,4 +70,11 @@ public class Student {
     }
 
     // status of student
+    public String toString(){
+           return "Name" + firstName + " " + lastName +
+                   "\nGrade Level: " + gradeYear +
+                   "\nStudent ID: " + studentID +
+                   "\nCourses Enrolled: " + courses +
+                   "\nBalance: $" + tuitionBalance;
+    }
 }
