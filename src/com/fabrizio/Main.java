@@ -7,5 +7,6 @@ public class Main {
         // project
         Student stu1 = new Student();
         stu1.enroll();
+
     }
 }
